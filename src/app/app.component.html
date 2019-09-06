@@ -14,3 +14,7 @@
 
 
 <app-mydate [inputDate]="newdate" [disabled]="disabled" [format]="dateformat" [dataType]="dataType"></app-mydate>
+
+<br><br>
+<p-calendar [(ngModel)]="dt" dateFormat="dd.mm.yy"></p-calendar>
+{{dt}}

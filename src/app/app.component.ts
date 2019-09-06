@@ -12,8 +12,10 @@ export class AppComponent  {
    disabled: boolean = true;
    dateformat: string;
    dataType:string;
+   dt:string;
 constructor() { }
   ngOnInit() {
+    this.dt = "11.05.2019";
     this.dataType = 'string';
     this.newdate = "5-24-2019";
     // this.newdate = new Date("5/24/2019");
