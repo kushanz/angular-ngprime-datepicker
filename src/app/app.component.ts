@@ -15,9 +15,9 @@ export class AppComponent  {
    dt:string;
 constructor() { }
   ngOnInit() {
-    this.dt = "11.05.2019";
+    this.dt = "11-05-2019";
     this.dataType = 'string';
-    this.newdate = "5-24-2019";
+    this.newdate = "5-12-2019";
     // this.newdate = new Date("5/24/2019");
     this.dateformat = '';
   }
