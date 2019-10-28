@@ -13,6 +13,9 @@ export class AppComponent  {
    dateformat: string;
    dataType:string;
    dt:string;
+   currentyear:number;
+   fiftybackyear:number;
+   futureYear:number;
 constructor() { }
   ngOnInit() {
     this.dt = "11-05-2019";
@@ -20,6 +23,9 @@ constructor() { }
     this.newdate = "5-12-2019";
     // this.newdate = new Date("5/24/2019");
     this.dateformat = '';
+    this.futureYear = (new Date().getFullYear()+100);
+    this.fiftybackyear = (new Date().getFullYear()-100);
+    
   }
 
    addDate() {
