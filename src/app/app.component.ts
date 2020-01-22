@@ -29,8 +29,7 @@ constructor() { }
   }
    addDate() {
      console.log(this.value)
-     
-     console.log(new Date())
+     console.log(new Date(this.value))
     this.newdate = new Date(this.value);
     console.log(this.newdate);
    }
