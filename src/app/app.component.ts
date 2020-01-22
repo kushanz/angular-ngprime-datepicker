@@ -19,7 +19,7 @@ export class AppComponent  {
 constructor() { }
   ngOnInit() {
     this.dt = "11-05-2019";
-    this.dataType = 'string';
+    this.dataType = 'string'; 
     this.newdate = "5-12-2019";
     // this.newdate = new Date("5/24/2019");
     this.dateformat = '';
@@ -27,9 +27,9 @@ constructor() { }
     this.fiftybackyear = (new Date().getFullYear()-100);
     
   }
-
    addDate() {
     this.newdate = new Date(this.value);
+    console.log(this.newdate);
    }
    toggleDisable() {
      this.disabled = !this.disabled;
