@@ -30,7 +30,7 @@ constructor() { }
    addDate() {
      console.log(this.value)
      console.log(new Date(this.value))
-    this.newdate = new Date(this.value);
+    this.newdate = new Date(this.value.replace("-","/"));
     console.log(this.newdate);
    }
    toggleDisable() {
