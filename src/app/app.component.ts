@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-   newdate: Date;
+   newdate: any;
    value: string;
    disabled: boolean = true;
    dateformat: string;
@@ -20,7 +20,7 @@ constructor() { }
   ngOnInit() {
     this.dt = "11-05-2019";
     this.dataType = 'date'; 
-    // this.newdate = "5-12-2019";
+    this.newdate = "";
     // this.newdate = new Date("5/24/2019");
     this.dateformat = '';
     this.futureYear = (new Date().getFullYear()+100);
@@ -30,7 +30,7 @@ constructor() { }
    addDate() {
      console.log(this.value)
      console.log(new Date(this.value))
-    this.newdate = new Date(this.value.replace("-","/"));
+    this.newdate = new Date(this.value);
     console.log(this.newdate);
    }
    toggleDisable() {
